@@ -17,7 +17,7 @@ header ul{
   border-bottom: 1px solid black;
 }
 
-header a{
+a{
   text-decoration:none;
   color: black;
 }
@@ -29,10 +29,16 @@ header{
   padding: 16px;
   align-items:center;
   border-bottom: 1px solid grey;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top:0;
+  background-color: white;
 }
 
 header nav ul{
   display: flex;
+  background-color: white;
 }
 h1{
   margin: 0 0 0 1rem;
@@ -83,14 +89,40 @@ nav ul a:hover{
   top:calc(50% - (303px / 2));
 }
 
-main > div {
-  text-align: center;
-  padding:5%;
-  color:white;
-}
-.background-banner{
+.banner{
   background-image: url('../img/five-guys-hero.jpg');
-  background-size: 100%;
+  background-position: bottom center;
+  background-size: cover;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 500px;
+  padding: 25% 0;
+  max-height: 100vh;
+}
+.banner p{
+  width: 50%;
+  min-width: 300px;
+  max-width: 650px;
+}
+
+main{
+  text-align: center;
+  padding-top: 45px;
+}
+main  ul{
+  list-style: none;
+  padding: 0;
+}
+
+@media (hover:none) {
+  .banner{
+    height: 100vh;
+  }
+
 }
 
 @media (min-width:768px) {
@@ -120,5 +152,19 @@ main > div {
   .locations{
     max-width: 800px;
     margin: 0 auto;
+  }
+  .wrap{
+    display: flex;
+    flex-wrap:wrap;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .wrap li:after{
+    content: '\2022';
+  }
+  .wrap li:last-child:after{
+    content: '';
   }
 }

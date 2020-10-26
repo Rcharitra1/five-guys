@@ -1,7 +1,7 @@
 // $(".overlay").hide();
 
 $(".menu-btn").click(function(e){
-  $(".menu-btn .fas").toggleClass("fa-bars fa-times-circle")
+  $(".menu-btn .fas").toggleClass("fa-bars fa-times-circle");
   $("nav ul").toggle();
   e.preventDefault();
 })
