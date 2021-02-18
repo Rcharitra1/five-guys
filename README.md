@@ -1,2 +1,3 @@
 - For Educational Purposes Only
+- Imitation website for the sole purpose of capability demonstration. 
 - https://inclass2-webdev.netlify.app/
